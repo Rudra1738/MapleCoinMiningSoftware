@@ -1,0 +1,218 @@
+{
+    "Nav": {
+
+        "Master": {
+            "type" : "Tk",
+            "geometry": "1125x675",
+            "title": "Maple Coin"
+        }, 
+
+        "navigationFrame":{
+            "type": "LabelFrame",
+            "height": 1200,
+            "width": 275,
+            "bg": "#e7b309",
+            "propogate": 0,
+            "place": {
+                "x" : 0,
+                "y" : 0
+            },
+            "display": "False"
+        },
+        "welcomeLabel":{
+            "type": "Label",
+            "text": "Welcome!",
+            "bg": "#e7b309",
+            "master": "navigationFrame",
+            "place":{
+                "x": 0.05,
+                "y": 0.02
+            },
+            "display": "False"
+        },
+        "successLabel": {
+            "type": "Label",
+            "text": "Successfully Mined Block",
+            "bg": "green",
+            "master": "navigationFrame",
+            "place": {
+                "x": 0.1,
+                "y": 0.1
+            },
+            "display": "False"
+        },
+        "mineButton":{
+            "type": "Button",
+            "text": "Mine 1 Block",
+            "master": "navigationFrame",
+            "padx": 20,
+            "pady": 10,
+            "place": {
+                "x": 0.19,
+                "y": 0.32
+            },
+            "display": "False"
+        },
+        "autoMineLabel": {
+            "type": "Label",
+            "text": "Auto Mine Hours:",
+            "master": "navigationFrame",
+            "bg": "#e7b309",
+            "place": {
+                "x": 0.05,
+                "y": 0.23
+            },
+            "display": "False"
+        },
+        "autoMineHours": {
+            "type": "Entry",
+            "master": "navigationFrame",
+            "width": 10,
+            "place":{
+                "x": 0.23,
+                "y": 0.23
+            },
+            "display": "False"
+        },
+        "autoMineButton":{
+            "type": "Button",
+            "text": "Auto Mine",
+            "master": "navigationFrame",
+            "padx": 23,
+            "pady": 10,
+            "place": {
+                "x": 0.19,
+                "y": 0.4
+            },
+            "display": "False"
+        },
+        "mineBlocksLabel":{
+            "type": "Label",
+            "text": "Blocks Mined in current session: 0",
+            "master": "navigationFrame",
+            "bg": "#e7b309",
+            "place": {
+                "x": 0.05,
+                "y": 0.53
+            },
+            "display": "False"
+        },
+        "transactionsLabel":{
+            "type": "Label",
+            "text": "Transactions",
+            "place": {
+                "x": 0.223,
+                "y": 0.03
+            },
+            "display": "False"
+        },
+        "transactions":{
+            "type": "Listbox",
+            "width": 99,
+            "height": 14,
+            "place": {
+                "x": 0.225,
+                "y": 0.09
+            },
+            "display": "False"
+        },
+        "blockChainLabel":{
+            "type": "Label",
+            "text": "Block Chain",
+            "place": {
+                "x": 0.223,
+                "y": 0.53
+            },
+            "display": "False"
+        },
+        "blockChain":{
+            "type": "Listbox",
+            "width": 99,
+            "height": 14,
+            "place": {
+                "x": 0.225,
+                "y": 0.59
+            },
+            "display": "False"
+        },
+
+
+
+        
+        "loginFrame":{
+            "type": "LabelFrame",
+            "height" : 540,
+            "width": 900,
+            "place": {
+                "x": 0.09,
+                "y": 0.09
+            }
+        },
+        "errorLabel":{
+            "type": "Label",
+            "text": "Invalid Credentials!",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.47,
+                "y": 0.75
+            },
+            "display": "False"
+        },
+        "loginTitle":{
+            "type": "Label",
+            "text": "Maple Coin Mining Software: Login",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.085,
+                "y": 0.05
+            }
+        },
+        "usernameLabel":{
+            "type": "Label",
+            "text": "Username:",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.05,
+                "y": 0.35
+            }
+        },
+        "passwordLabel": {
+            "type": "Label",
+            "text": "Password:",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.05,
+                "y": 0.45
+            }
+        },
+        "usernameInput": {
+            "type": "Entry",
+            "master": "loginFrame",
+            "width": 30,
+            "place":{
+                "x": 0.23,
+                "y": 0.35
+            }
+        },
+        "passwordInput": {
+            "type": "Entry",
+            "master": "loginFrame",
+            "width": 30,
+            "place": {
+                "x": 0.23,
+                "y": 0.45
+            }
+        },
+        "loginButton": {
+            "type": "Button",
+            "text": "Login",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.47,
+                "y": 0.65
+            },
+            "padx": 25,
+            "pady": 5
+        }
+    }
+}
