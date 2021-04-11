@@ -87,7 +87,7 @@ class Interface():
 
         MapleTk.mainloop()
 
-    def fontInit(self):
+     def fontInit(self):
         self.navObjects["Label"]["loginTitle"].config(font=("TimesNewRoman", 50))
         self.navObjects["Label"]["usernameLabel"].config(font=("TimesNewRoman", 18))
         self.navObjects["Entry"]["usernameInput"].config(font=("TimesNewRoman", 18))
@@ -97,25 +97,25 @@ class Interface():
         self.navObjects["Button"]["loginButton"].config(font=("TimesNewRoman", 23))
         self.navObjects["Button"]["mineButton"].config(font=("TimesNewRoman", 18))
         self.navObjects["Button"]["autoMineButton"].config(font=("TimesNewRoman", 18))
-        self.navObjects["Label"]["welcomeLabel"].config(font=("TimesNewRoman", 17)) #from 23
+        self.navObjects["Label"]["welcomeLabel"].config(font=("TimesNewRoman", 23))
         self.navObjects["Label"]["successLabel"].config(font=("TimesNewRoman", 18))
-        self.navObjects["Label"]["mineBlocksLabel"].config(font=("TimesNewRoman", 13)) #from 15
+        self.navObjects["Label"]["mineBlocksLabel"].config(font=("TimesNewRoman", 15))
         self.navObjects["Label"]["transactionsLabel"].config(font=("TimesNewRoman", 23))
         self.navObjects["Label"]["blockChainLabel"].config(font=("TimesNewRoman", 23))
         self.navObjects["Listbox"]["transactions"].config(font=("TimesNewRoman", 16))
         self.navObjects["Listbox"]["blockChain"].config(font=("TimesNewRoman", 16))
-        self.navObjects["Label"]["autoMineLabel"].config(font=("TimesNewRoman", 13)) #from 15
+        self.navObjects["Label"]["autoMineLabel"].config(font=("TimesNewRoman", 15))
         self.navObjects["Entry"]["autoMineHours"].config(font=("TimesNewRoman", 15))
     
     def showMiningPage(self):
         self.navObjects["LabelFrame"]["loginFrame"].destroy()
         self.navObjects["Master"].geometry("1300x700")
         self.navObjects["LabelFrame"]["navigationFrame"].place(relx= 0, rely= 0)
-        self.navObjects["Button"]["mineButton"].place(relx= 0.14, rely= 0.4) #from x=0.22
-        self.navObjects["Label"]["autoMineLabel"].place(relx= 0.03, rely= 0.25) #from x=0.05
-        self.navObjects["Entry"]["autoMineHours"].place(relx= 0.48, rely= 0.248) #from x= 0.53
+        self.navObjects["Button"]["mineButton"].place(relx= 0.22, rely= 0.4)
+        self.navObjects["Label"]["autoMineLabel"].place(relx= 0.05, rely= 0.25)
+        self.navObjects["Entry"]["autoMineHours"].place(relx= 0.53, rely= 0.248)
         self.navObjects["Entry"]["autoMineHours"].insert(0, 1)
-        self.navObjects["Button"]["autoMineButton"].place(relx= 0.18, rely= 0.29) #from x=0.24
+        self.navObjects["Button"]["autoMineButton"].place(relx= 0.24, rely= 0.29)
         self.navObjects["Label"]["welcomeLabel"].place(relx= 0.05, rely= 0.02)
         self.navObjects["Label"]["transactionsLabel"].place(relx= 0.223, rely= 0.03)
         self.navObjects["Label"]["mineBlocksLabel"].place(relx= 0.04, rely= 0.53)
