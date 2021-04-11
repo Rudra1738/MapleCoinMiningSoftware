@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import Style
-from PIL import ImageTk, Image
+#from PIL import ImageTk, Image
 from copy import deepcopy
 import json, threading, time
 from tkinter import messagebox
