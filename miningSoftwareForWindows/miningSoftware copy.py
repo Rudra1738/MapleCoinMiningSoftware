@@ -49,7 +49,7 @@ class Miner():
         block.nonce = random.randint(0, 10000000)
         block.hash = self.calculateHash(block)
         while block.hash[0:len(hashPuzzle)] != hashPuzzle:
-            if ((datetime.datetime.now().minute - startTime.minute) % 3) == 0:         
+            if ((datetime.datetime.now().minute - startTime.minute) % 5) == 0:         
                 if not check:
                     if int(session.get(url('currentBlockSearchIndex')).text) > int(self.block.newBlockIndex):
                         break
