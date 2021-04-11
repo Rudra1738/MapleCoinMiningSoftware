@@ -108,8 +108,8 @@
         },
         "transactions":{
             "type": "Listbox",
-            "width": 99,
-            "height": 14,
+            "width": 85,
+            "height": 12,
             "place": {
                 "x": 0.225,
                 "y": 0.09
@@ -127,8 +127,8 @@
         },
         "blockChain":{
             "type": "Listbox",
-            "width": 99,
-            "height": 14,
+            "width": 85,
+            "height": 10,
             "place": {
                 "x": 0.225,
                 "y": 0.59
