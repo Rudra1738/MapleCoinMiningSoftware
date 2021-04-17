@@ -1,0 +1,212 @@
+{
+    "Interface": {
+
+        "Master": {
+            "type" : "Tk",
+            "geometry": "1125x675",
+            "title": "Maple Coin"
+        }, 
+
+        "navigationFrame":{
+            "type": "LabelFrame",
+            "height": 1200,
+            "width": 375,
+            "bg": "#e7b309",
+            "propogate": 0,
+            "place": {
+                "x" : 0,
+                "y" : 0
+            },
+            "display": "False"
+        },
+        "welcomeLabel":{
+            "type": "Label",
+            "text": "Maple Coin: Mining Software",
+            "bg": "#e7b309",
+            "master": "navigationFrame",
+            "place":{
+                "x": 0.05,
+                "y": 0.02
+            },
+            "display": "False"
+        },
+        "mineBlocksLabel":{
+            "type": "Label",
+            "text": "Blocks Mined in current session: 0",
+            "master": "navigationFrame",
+            "bg": "#e7b309",
+            "place": {
+                "x": 0.05,
+                "y": 0.1
+            },
+            "display": "False"
+        },
+        "mineBlocksRejectLabel":{
+            "type": "Label",
+            "text": "Blocks Rejected in current session: 0",
+            "master": "navigationFrame",
+            "bg": "#e7b309",
+            "place": {
+                "x": 0.05,
+                "y": 0.13
+            },
+            "display": "False"
+        },
+
+        "CPUFrame":{
+            "master": "navigationFrame",
+            "type": "LabelFrame",
+            "text": "Mining Units (CPUs)",
+            "height": 775,
+            "width": 358,
+            "bg": "#e7b309",
+            "propogate": 0,
+            "place": {
+                "x" : 0.02,
+                "y" : 0.18
+            },
+            "display": "False"
+        },
+        "transactionsLabel":{
+            "type": "Label",
+            "text": "Transactions",
+            "place": {
+                "x": 0.226,
+                "y": 0.02
+            },
+            "display": "False"
+        },
+        "transactions":{
+            "type": "Listbox",
+            "width": 130,
+            "height": 23,
+            "place": {
+                "x": 0.229,
+                "y": 0.06
+            },
+            "display": "False"
+        },
+        "blockChainLabel":{
+            "type": "Label",
+            "text": "Block Chain",
+            "place": {
+                "x": 0.226,
+                "y": 0.52
+            },
+            "display": "Fasle"
+        },
+        "blockChain":{
+            "type": "Listbox",
+            "width": 130,
+            "height": 22,
+            "place": {
+                "x": 0.229,
+                "y": 0.56
+            },
+            "display": "False"
+        },
+        "refreshCPUs": {
+            "type": "Button",
+            "text": "Check CPU Availibility",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.83,
+                "y": 0.015
+            },
+            "padx": 10,
+            "pady": 5,
+            "display": "False"
+        },
+        "refreshData": {
+            "type": "Button",
+            "text": "Refresh Data",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.93,
+                "y": 0.015
+            },
+            "padx": 10,
+            "pady": 5,
+            "display": "False"
+        },
+
+
+
+        
+        "loginFrame":{
+            "type": "LabelFrame",
+            "height" : 540,
+            "width": 900,
+            "place": {
+                "x": 0.09,
+                "y": 0.09
+            }
+        },
+        "errorLabel":{
+            "type": "Label",
+            "text": "Invalid Credentials!",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.47,
+                "y": 0.75
+            },
+            "display": "False"
+        },
+        "loginTitle":{
+            "type": "Label",
+            "text": "Maple Coin: Login",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.285,
+                "y": 0.05
+            }
+        },
+        "usernameLabel":{
+            "type": "Label",
+            "text": "Username:",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.05,
+                "y": 0.35
+            }
+        },
+        "passwordLabel": {
+            "type": "Label",
+            "text": "Password:",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.05,
+                "y": 0.45
+            }
+        },
+        "usernameInput": {
+            "type": "Entry",
+            "master": "loginFrame",
+            "width": 30,
+            "place":{
+                "x": 0.23,
+                "y": 0.35
+            }
+        },
+        "passwordInput": {
+            "type": "Entry",
+            "master": "loginFrame",
+            "width": 30,
+            "place": {
+                "x": 0.23,
+                "y": 0.45
+            }
+        },
+        "loginButton": {
+            "type": "Button",
+            "text": "Login",
+            "master": "loginFrame",
+            "place": {
+                "x": 0.47,
+                "y": 0.65
+            },
+            "padx": 25,
+            "pady": 5
+        }
+    }
+}
