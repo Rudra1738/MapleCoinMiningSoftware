@@ -4,7 +4,7 @@ On this page you will find all the tools required for mining Maple Coin blocks a
 
 To get started with mining:-
 
-1) Install Python 3 (with tkinter) on your computer. Click here for a tutorial on how to install Python. 
+1) Install Python 3 (with tkinter) on your computer.
 
 2) Next, click the green code button above and download the mining software and unzip it. 
 
