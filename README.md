@@ -1,4 +1,4 @@
-# MapleCoinMiningSoftware
+# Maple Coin: Mining Software
 
 On this page you will find all the tools required for mining Maple Coin blocks and contributing to the Block Chain Network. For your hardwork, you will be rewarded in Maple Coins for each block that you able to mine.
 
