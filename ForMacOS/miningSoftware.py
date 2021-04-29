@@ -192,17 +192,34 @@ class Miner(Network):
         self.hashPuzzle = newBlockInfo["hashPuzzle"]
         self.maxTransactions = newBlockInfo["maxTransactions"]
 
-        #Verfiying and validating the transactions to be placed into the block, if transaction is not valid, ignore
-        self.getValidTransactions = lambda transactions : [   
-                transaction for transaction in transactions
-                if rsa.verify(transaction.stringTransactions().encode('utf8'), transaction.signature, rsa.PublicKey(int(transaction.publicKey), int(transaction.exponent)))
-        ]
-
-        #Adhereing to the limit of transactions per block
-        self.transactions = self.getValidTransactions(self.pendingTransactions)[0:self.maxTransactions]
-
+        #Verfiying the transactions to be placed into the block and adhereing to the block limit
+        self.transactions = self.getValidTransactions()[0:self.maxTransactions]
+        
         #Future block attribute
         self.block = None
+
+    def getValidTransactions(self):
+        """
+        This instance method gets all the valid transactions from the pending transactions
+        To validate a transaction it verifies it's signature
+        """
+
+        #To store valid transactions
+        transactions = []
+
+        for transaction in self.pendingTransactions:
+
+            #Trying to verify because rsa verify throws error when signature is fradulent
+            try:   
+                
+                #Verify transaction and add it to the valid transactions list
+                if rsa.verify(transaction.stringTransactions().encode('utf8'), transaction.signature, rsa.PublicKey(int(transaction.publicKey), int(transaction.exponent))):
+                    transactions.append(transaction)
+            except:
+                continue
+        
+        #Return the valid transactions
+        return transactions
 
     def calculateHash(self):
         """
